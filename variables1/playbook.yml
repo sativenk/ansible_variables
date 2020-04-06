@@ -1,0 +1,10 @@
+---
+- hosts: servera.lab.example.com
+  vars_files:
+    - var1/users.yml
+  tasks:
+    - name: to create m user mentioned in a file
+      user:
+        name: "{{ names }}"
+
+        

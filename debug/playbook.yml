@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: true
+  remote_user: root
+  tasks:
+    - name: to create a register variable
+      yum:
+        name: httpd
+        state: installed
+      register: install_result
+    - debug: var=install_result
+

@@ -1,0 +1,7 @@
+---
+- hosts: all
+  remote_user: root
+  tasks:
+    - name: to create users on servera
+      user:
+        name: "{{ user }}"

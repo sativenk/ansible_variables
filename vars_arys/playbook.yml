@@ -1,0 +1,12 @@
+---
+- hosts: all
+  vars:
+    packages:
+      apache: 'httpd'
+      dns: 'bind'
+      mariadb: 'mariadb-server'
+  tasks:
+    - name: to display respective package
+      debug:
+        msg: "package for mariadb is {{packages['mariadb'] }}"
+

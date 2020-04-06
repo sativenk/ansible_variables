@@ -1,0 +1,3 @@
+copy:
+  src: /etc/httpd/conf/httpd.conf
+  dest: /root/file1

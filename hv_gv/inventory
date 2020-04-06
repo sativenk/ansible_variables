@@ -1,0 +1,6 @@
+[group1]
+servera.lab.example.com
+serverd.lab.example.com
+
+[group1:vars]
+user=cindy

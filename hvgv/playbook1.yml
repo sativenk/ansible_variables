@@ -1,0 +1,17 @@
+---
+- hosts: group2
+  vars_files:
+    - group_vars/group1
+    - hosts_vars/hosts
+  tasks:
+    - name: to install a pkg
+      yum:
+        name: "{{ package }}"
+        state: latest
+    - name: to enable service
+      service:
+        name: "{{ package }}"
+        state: started
+
+
+

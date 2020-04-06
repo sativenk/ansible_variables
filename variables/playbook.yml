@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  become_method: sudo
+  vars:
+    user: ram
+  tasks:
+    - name: to create users on servera
+      user:
+        name: "{{ user }}"
